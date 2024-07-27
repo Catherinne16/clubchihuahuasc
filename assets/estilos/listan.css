@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: math;
+    line-height: 0.6;
+}
+
+header {
+    background-color: #050003;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.icono-principal img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.contenido {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #fd9bd7;
+    color: #0f0101;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}
+
+.link-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #000102;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .icono-principal img {
+        width: 120px;
+        height: 120px;
+    }
+
+    header, footer {
+        padding: 15px;
+    }
+
+    .button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icono-principal img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .button {
+        padding: 6px 12px;
+        font-size: 0.9em;
+    }
+}
